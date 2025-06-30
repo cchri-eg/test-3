@@ -1,0 +1,12 @@
+     A                                      UNIQUE
+     A          R EGPARAREC
+     A            APPAKEY1      10A
+     A            APPAKEY2      10A
+     A            APPAKEY3      10A
+     A            APPAKEY4      10A
+     A            APPAVAL1      20A
+     A            APPADESC      40A
+     A          K APPAKEY1
+     A          K APPAKEY2
+     A          K APPAKEY3
+     A          K APPAKEY4

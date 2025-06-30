@@ -1,0 +1,60 @@
+     A*%%TS  SD  20250627  111838  CHRISTON    REL-V7R5M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R EGSFLDSP                  SFL
+     A*%%TS  SD  20250620  090349  CHRISTON    REL-V7R5M0  5770-WDS
+     A            OPT            1A  I 12  6
+     A            APRREF    R        O 12 13REFFLD(EGRATE00R/APRREF CHRISTON1/E-
+     A                                      GRATE00)
+     A            APRSTS    R        O 12 33REFFLD(EGRATE00R/APRSTS CHRISTON1/E-
+     A                                      GRATE00)
+     A            APPRATE   R        O 12 46REFFLD(EGRATE00R/APPRATE CHRISTON1/-
+     A                                      EGRATE00)
+     A          R EGSFLCTRL                 SFLCTL(EGSFLDSP)
+     A*%%TS  SD  20250627  103102  CHRISTON    REL-V7R5M0  5770-WDS
+     A                                      CA03(03 'FOR EXIT')
+     A                                      CA05(05 'REFRESH')
+     A                                      CA06(06 'ADD NEW APPROVAL')
+     A                                      OVERLAY
+     A  50                                  SFLDSP
+     A  50                                  SFLDSPCTL
+     A N50                                  SFLCLR
+     A  50                                  SFLEND(*MORE)
+     A                                      SFLSIZ(0100)
+     A                                      SFLPAG(0007)
+     A                                  2  3USER
+     A            FLD001         9A  O  3  3
+     A                                  3 30'AS400 PRACTICAL'
+     A                                  2 65DATE
+     A                                      EDTCDE(Y)
+     A                                  3 65TIME
+     A                                  4 28'SPECIAL RATE APPROVAL'
+     A                                  7  5'TYPE OPTION, PRESS ENTER.'
+     A                                  8 10'5=DISPLAY APPROVAL'
+     A                                 10  6'OPT'
+     A                                 10 13'APPROVAL NUMBER'
+     A                                 10 33'STATUS'
+     A                                 10 46'RATE'
+     A          R DETAIL
+     A*%%TS  SD  20250627  111838  CHRISTON    REL-V7R5M0  5770-WDS
+     A                                      CA03(03 'FOR EXIT')
+     A                                      CF10(10 'FOR ADDING')
+     A                                      CA12(12 'FOR CANCEL')
+     A                                  2  3USER
+     A                                  2 27'EXCHANGE CENTER L.L.C'
+     A                                  3 21'INSTANT DRAFT CANCELLATION -DISPLA-
+     A                                      Y APPROVAL'
+     A                                  3 69TIME
+     A                                  2 69DATE
+     A                                      EDTCDE(Y)
+     A                                  6  5'Press enter to contine'
+     A                                  8  5'Approval Rate : '
+     A                                 23  9'F3=EXIT'
+     A                                 23 21'F10= ADD APPROVAL'
+     A                                 23 42'F12=PREVIOUS'
+     A            APPRATE1      18Y 9B  8 24EDTWRD('         .         ')
+     A          R FOOTER
+     A*%%TS  SD  20250627  102951  CHRISTON    REL-V7R5M0  5770-WDS
+     A                                 22 18'f3=exit'
+     A                                 22 30'f6=add'
+     A                                 22 39'f5=refresh'

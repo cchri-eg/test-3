@@ -1,0 +1,13 @@
+     A                                      UNIQUE
+     A          R EGRATE00R
+     A            APRREF         9A         TEXT('APPROVAL REFERENCE NUMBER')
+     A            APRSTS         1A         TEXT('APPROVAL STATUS')
+     A            APRREM        60A         TEXT('APPROVAL REMARKS')
+     A            APRDAT         8A         TEXT('APPROVAL DATE')
+     A            APRTIM         8A         TEXT('APPROVAL TIME')
+     A            APRUSR        10A         TEXT('APPROVAL USER')
+     A            CHGDAT         8A         TEXT('CHANGE DATE')
+     A            CHGTIM         8A         TEXT('CHANGE TIME')
+     A            CHGUSR        10A         TEXT('CHANGE USER')
+     A            APPRATE       18P 9       TEXT('APPROVAL RATE')
+     A          K APRREF
