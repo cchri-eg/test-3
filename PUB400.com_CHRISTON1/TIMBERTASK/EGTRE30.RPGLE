@@ -58,16 +58,6 @@
 
             ENDSR;
         /END-FREE
-      *
-        /FREE
-            BEGSR $ADDAPPROVAL1;
-                DOW *IN03 = *OFF;
-                    EXFMT DETAIL;
-                    DSPLY APPRATE1;
-                ENDDO;
-                *IN03 = *OFF;
-
-            ENDSR;
-        /END-FREE
+      
 
 
