@@ -14,7 +14,7 @@
                     when (*in06 = *on);
                        EXSR $ADDAPPROVAL;
                     other;
-
+                        //leave;
                 endsl;
             enddo;
             *INLR = *ON;
